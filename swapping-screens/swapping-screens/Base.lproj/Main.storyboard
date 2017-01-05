@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="swapping_screens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hV0-dc-qfK">
+                                <rect key="frame" x="58" y="46" width="259" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="42h-uf-A7Y"/>
+                                    <constraint firstAttribute="width" constant="259" id="EoQ-Xz-8HH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSy-Jj-3JL">
+                                <rect key="frame" x="58" y="96" width="259" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="06j-mO-VIe"/>
+                                    <constraint firstAttribute="height" constant="30" id="IKX-PO-1zj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZK-6M-e5w">
+                                <rect key="frame" x="166" y="148" width="42" height="30"/>
+                                <state key="normal" title="Login!"/>
+                                <connections>
+                                    <segue destination="zRY-Pi-4qs" kind="show" id="0Cv-YH-rDB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BSy-Jj-3JL" firstAttribute="top" secondItem="hV0-dc-qfK" secondAttribute="bottom" constant="20" id="63Y-3c-jRD"/>
+                            <constraint firstItem="jZK-6M-e5w" firstAttribute="top" secondItem="BSy-Jj-3JL" secondAttribute="bottom" constant="22" id="Flu-EY-cU2"/>
+                            <constraint firstItem="hV0-dc-qfK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lof-hc-wga"/>
+                            <constraint firstItem="hV0-dc-qfK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="nIB-EI-fmk"/>
+                            <constraint firstItem="BSy-Jj-3JL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pj6-8w-LUj"/>
+                            <constraint firstItem="jZK-6M-e5w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qlG-CK-Fzu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--Game ListVC-->
+        <scene sceneID="61e-cT-eig">
+            <objects>
+                <viewController id="zRY-Pi-4qs" customClass="GameListVC" customModule="swapping_screens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QGj-rN-1oN"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ek-Z0-xli"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="elQ-Em-neN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZN-UX-CIu">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="zRY-Pi-4qs" eventType="touchUpInside" id="sUY-Am-bRP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySo-fe-d6h">
+                                <rect key="frame" x="131.5" y="318.5" width="112" height="30"/>
+                                <state key="normal" title="Load 3rd screen"/>
+                                <connections>
+                                    <action selector="loadBtnPressed:" destination="zRY-Pi-4qs" eventType="touchUpInside" id="3FZ-1N-C1p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ySo-fe-d6h" firstAttribute="centerX" secondItem="elQ-Em-neN" secondAttribute="centerX" id="MDc-cx-Ykt"/>
+                            <constraint firstItem="ySo-fe-d6h" firstAttribute="centerY" secondItem="elQ-Em-neN" secondAttribute="centerY" id="PSi-3m-UTv"/>
+                            <constraint firstItem="5ZN-UX-CIu" firstAttribute="leading" secondItem="elQ-Em-neN" secondAttribute="leadingMargin" id="fP4-Wv-6LC"/>
+                            <constraint firstItem="5ZN-UX-CIu" firstAttribute="top" secondItem="QGj-rN-1oN" secondAttribute="bottom" id="xad-UQ-T2i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="YAm-zf-Pfa" kind="showDetail" identifier="gamePageVC" id="yoY-JW-ugH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O79-pr-spC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.79999999999995" y="86.806596701649184"/>
+        </scene>
+        <!--Game PageVC-->
+        <scene sceneID="zOv-sH-g8B">
+            <objects>
+                <viewController id="YAm-zf-Pfa" customClass="GamePageVC" customModule="swapping_screens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hnB-vj-PiJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lcn-3g-0LI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="52A-E3-r1K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yy5-FJ-xlS">
+                                <rect key="frame" x="37.5" y="283.5" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HWn-TD-mlC"/>
+                                    <constraint firstAttribute="height" constant="100" id="KTg-p3-gMV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yy5-FJ-xlS" firstAttribute="centerY" secondItem="52A-E3-r1K" secondAttribute="centerY" id="ZiQ-be-uFB"/>
+                            <constraint firstItem="Yy5-FJ-xlS" firstAttribute="centerX" secondItem="52A-E3-r1K" secondAttribute="centerX" id="sAb-Dm-iZX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameLabel" destination="Yy5-FJ-xlS" id="RDk-uS-XHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEX-Tc-pHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="25"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AA52D801E1F054E008AC2B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52D7F1E1F054E008AC2B1 /* AppDelegate.swift */; };
+		5AA52D821E1F054E008AC2B1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52D811E1F054E008AC2B1 /* LoginVC.swift */; };
+		5AA52D851E1F054E008AC2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA52D831E1F054E008AC2B1 /* Main.storyboard */; };
+		5AA52D871E1F054E008AC2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA52D861E1F054E008AC2B1 /* Assets.xcassets */; };
+		5AA52D8A1E1F054E008AC2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA52D881E1F054E008AC2B1 /* LaunchScreen.storyboard */; };
+		5AA52D951E1F054E008AC2B1 /* swapping_screensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52D941E1F054E008AC2B1 /* swapping_screensTests.swift */; };
+		5AA52DA01E1F054E008AC2B1 /* swapping_screensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52D9F1E1F054E008AC2B1 /* swapping_screensUITests.swift */; };
+		5AA52DAE1E1F0724008AC2B1 /* GameListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52DAD1E1F0724008AC2B1 /* GameListVC.swift */; };
+		5AA52DB01E1F0BA4008AC2B1 /* GamePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52DAF1E1F0BA4008AC2B1 /* GamePageVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AA52D911E1F054E008AC2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AA52D741E1F054E008AC2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA52D7B1E1F054E008AC2B1;
+			remoteInfo = "swapping-screens";
+		};
+		5AA52D9C1E1F054E008AC2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AA52D741E1F054E008AC2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA52D7B1E1F054E008AC2B1;
+			remoteInfo = "swapping-screens";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5AA52D7C1E1F054E008AC2B1 /* swapping-screens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swapping-screens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA52D7F1E1F054E008AC2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AA52D811E1F054E008AC2B1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5AA52D841E1F054E008AC2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AA52D861E1F054E008AC2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AA52D891E1F054E008AC2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AA52D8B1E1F054E008AC2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA52D901E1F054E008AC2B1 /* swapping-screensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swapping-screensTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA52D941E1F054E008AC2B1 /* swapping_screensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swapping_screensTests.swift; sourceTree = "<group>"; };
+		5AA52D961E1F054E008AC2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA52D9B1E1F054E008AC2B1 /* swapping-screensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swapping-screensUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA52D9F1E1F054E008AC2B1 /* swapping_screensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swapping_screensUITests.swift; sourceTree = "<group>"; };
+		5AA52DA11E1F054E008AC2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA52DAD1E1F0724008AC2B1 /* GameListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListVC.swift; sourceTree = "<group>"; };
+		5AA52DAF1E1F0BA4008AC2B1 /* GamePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePageVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AA52D791E1F054E008AC2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA52D8D1E1F054E008AC2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA52D981E1F054E008AC2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AA52D731E1F054E008AC2B1 = {
+			isa = PBXGroup;
+			children = (
+				5AA52D7E1E1F054E008AC2B1 /* swapping-screens */,
+				5AA52D931E1F054E008AC2B1 /* swapping-screensTests */,
+				5AA52D9E1E1F054E008AC2B1 /* swapping-screensUITests */,
+				5AA52D7D1E1F054E008AC2B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AA52D7D1E1F054E008AC2B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AA52D7C1E1F054E008AC2B1 /* swapping-screens.app */,
+				5AA52D901E1F054E008AC2B1 /* swapping-screensTests.xctest */,
+				5AA52D9B1E1F054E008AC2B1 /* swapping-screensUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AA52D7E1E1F054E008AC2B1 /* swapping-screens */ = {
+			isa = PBXGroup;
+			children = (
+				5AA52D7F1E1F054E008AC2B1 /* AppDelegate.swift */,
+				5AA52D811E1F054E008AC2B1 /* LoginVC.swift */,
+				5AA52DAD1E1F0724008AC2B1 /* GameListVC.swift */,
+				5AA52DAF1E1F0BA4008AC2B1 /* GamePageVC.swift */,
+				5AA52D831E1F054E008AC2B1 /* Main.storyboard */,
+				5AA52D861E1F054E008AC2B1 /* Assets.xcassets */,
+				5AA52D881E1F054E008AC2B1 /* LaunchScreen.storyboard */,
+				5AA52D8B1E1F054E008AC2B1 /* Info.plist */,
+			);
+			path = "swapping-screens";
+			sourceTree = "<group>";
+		};
+		5AA52D931E1F054E008AC2B1 /* swapping-screensTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA52D941E1F054E008AC2B1 /* swapping_screensTests.swift */,
+				5AA52D961E1F054E008AC2B1 /* Info.plist */,
+			);
+			path = "swapping-screensTests";
+			sourceTree = "<group>";
+		};
+		5AA52D9E1E1F054E008AC2B1 /* swapping-screensUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA52D9F1E1F054E008AC2B1 /* swapping_screensUITests.swift */,
+				5AA52DA11E1F054E008AC2B1 /* Info.plist */,
+			);
+			path = "swapping-screensUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AA52D7B1E1F054E008AC2B1 /* swapping-screens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA52DA41E1F054E008AC2B1 /* Build configuration list for PBXNativeTarget "swapping-screens" */;
+			buildPhases = (
+				5AA52D781E1F054E008AC2B1 /* Sources */,
+				5AA52D791E1F054E008AC2B1 /* Frameworks */,
+				5AA52D7A1E1F054E008AC2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swapping-screens";
+			productName = "swapping-screens";
+			productReference = 5AA52D7C1E1F054E008AC2B1 /* swapping-screens.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AA52D8F1E1F054E008AC2B1 /* swapping-screensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA52DA71E1F054E008AC2B1 /* Build configuration list for PBXNativeTarget "swapping-screensTests" */;
+			buildPhases = (
+				5AA52D8C1E1F054E008AC2B1 /* Sources */,
+				5AA52D8D1E1F054E008AC2B1 /* Frameworks */,
+				5AA52D8E1E1F054E008AC2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA52D921E1F054E008AC2B1 /* PBXTargetDependency */,
+			);
+			name = "swapping-screensTests";
+			productName = "swapping-screensTests";
+			productReference = 5AA52D901E1F054E008AC2B1 /* swapping-screensTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AA52D9A1E1F054E008AC2B1 /* swapping-screensUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA52DAA1E1F054E008AC2B1 /* Build configuration list for PBXNativeTarget "swapping-screensUITests" */;
+			buildPhases = (
+				5AA52D971E1F054E008AC2B1 /* Sources */,
+				5AA52D981E1F054E008AC2B1 /* Frameworks */,
+				5AA52D991E1F054E008AC2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA52D9D1E1F054E008AC2B1 /* PBXTargetDependency */,
+			);
+			name = "swapping-screensUITests";
+			productName = "swapping-screensUITests";
+			productReference = 5AA52D9B1E1F054E008AC2B1 /* swapping-screensUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AA52D741E1F054E008AC2B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Yuen Hsi Chang";
+				TargetAttributes = {
+					5AA52D7B1E1F054E008AC2B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					5AA52D8F1E1F054E008AC2B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5AA52D7B1E1F054E008AC2B1;
+					};
+					5AA52D9A1E1F054E008AC2B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5AA52D7B1E1F054E008AC2B1;
+					};
+				};
+			};
+			buildConfigurationList = 5AA52D771E1F054E008AC2B1 /* Build configuration list for PBXProject "swapping-screens" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AA52D731E1F054E008AC2B1;
+			productRefGroup = 5AA52D7D1E1F054E008AC2B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AA52D7B1E1F054E008AC2B1 /* swapping-screens */,
+				5AA52D8F1E1F054E008AC2B1 /* swapping-screensTests */,
+				5AA52D9A1E1F054E008AC2B1 /* swapping-screensUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AA52D7A1E1F054E008AC2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA52D8A1E1F054E008AC2B1 /* LaunchScreen.storyboard in Resources */,
+				5AA52D871E1F054E008AC2B1 /* Assets.xcassets in Resources */,
+				5AA52D851E1F054E008AC2B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA52D8E1E1F054E008AC2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA52D991E1F054E008AC2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AA52D781E1F054E008AC2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA52D821E1F054E008AC2B1 /* LoginVC.swift in Sources */,
+				5AA52D801E1F054E008AC2B1 /* AppDelegate.swift in Sources */,
+				5AA52DAE1E1F0724008AC2B1 /* GameListVC.swift in Sources */,
+				5AA52DB01E1F0BA4008AC2B1 /* GamePageVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA52D8C1E1F054E008AC2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA52D951E1F054E008AC2B1 /* swapping_screensTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA52D971E1F054E008AC2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA52DA01E1F054E008AC2B1 /* swapping_screensUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AA52D921E1F054E008AC2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA52D7B1E1F054E008AC2B1 /* swapping-screens */;
+			targetProxy = 5AA52D911E1F054E008AC2B1 /* PBXContainerItemProxy */;
+		};
+		5AA52D9D1E1F054E008AC2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA52D7B1E1F054E008AC2B1 /* swapping-screens */;
+			targetProxy = 5AA52D9C1E1F054E008AC2B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AA52D831E1F054E008AC2B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AA52D841E1F054E008AC2B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AA52D881E1F054E008AC2B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AA52D891E1F054E008AC2B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AA52DA21E1F054E008AC2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AA52DA31E1F054E008AC2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AA52DA51E1F054E008AC2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swapping-screens/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ftl.swapping-screens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5AA52DA61E1F054E008AC2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swapping-screens/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ftl.swapping-screens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5AA52DA81E1F054E008AC2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "swapping-screensTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ftl.swapping-screensTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swapping-screens.app/swapping-screens";
+			};
+			name = Debug;
+		};
+		5AA52DA91E1F054E008AC2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "swapping-screensTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ftl.swapping-screensTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swapping-screens.app/swapping-screens";
+			};
+			name = Release;
+		};
+		5AA52DAB1E1F054E008AC2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "swapping-screensUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ftl.swapping-screensUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "swapping-screens";
+			};
+			name = Debug;
+		};
+		5AA52DAC1E1F054E008AC2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "swapping-screensUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ftl.swapping-screensUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "swapping-screens";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AA52D771E1F054E008AC2B1 /* Build configuration list for PBXProject "swapping-screens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA52DA21E1F054E008AC2B1 /* Debug */,
+				5AA52DA31E1F054E008AC2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA52DA41E1F054E008AC2B1 /* Build configuration list for PBXNativeTarget "swapping-screens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA52DA51E1F054E008AC2B1 /* Debug */,
+				5AA52DA61E1F054E008AC2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5AA52DA71E1F054E008AC2B1 /* Build configuration list for PBXNativeTarget "swapping-screensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA52DA81E1F054E008AC2B1 /* Debug */,
+				5AA52DA91E1F054E008AC2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5AA52DAA1E1F054E008AC2B1 /* Build configuration list for PBXNativeTarget "swapping-screensUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA52DAB1E1F054E008AC2B1 /* Debug */,
+				5AA52DAC1E1F054E008AC2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AA52D741E1F054E008AC2B1 /* Project object */;
+}
