@@ -13,7 +13,7 @@ enum Operator {
     case multiply, divide, add, subtract, equal, noOp
 }
 
-class ViewController: UIViewController {
+class CalcVC: UIViewController {
     
     @IBOutlet weak var counter: UILabel!
     var btnSound: AVAudioPlayer!
