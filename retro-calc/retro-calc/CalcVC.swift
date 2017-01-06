@@ -85,6 +85,13 @@ class CalcVC: UIViewController {
         getResult()
     }
     
+    @IBAction func clear(_ sender: Any) {
+        currentOperand = Operator.noOp
+        leftOperand = ""
+        rightOperand = ""
+        counter.text = "0"
+    }
+    
     func getResult() {
         if leftOperand != "" && rightOperand != "" {
             switch currentOperand! {
