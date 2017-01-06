@@ -15,6 +15,7 @@
 		5AA52DD31E1F18AD008AC2B1 /* retro_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52DD21E1F18AD008AC2B1 /* retro_calcTests.swift */; };
 		5AA52DDE1E1F18AD008AC2B1 /* retro_calcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52DDD1E1F18AD008AC2B1 /* retro_calcUITests.swift */; };
 		5AA52DEC1E1F256C008AC2B1 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AA52DEB1E1F256C008AC2B1 /* Minecraft.ttf */; };
+		5AA52DEE1E1F2615008AC2B1 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AA52DED1E1F2615008AC2B1 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5AA52DDD1E1F18AD008AC2B1 /* retro_calcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retro_calcUITests.swift; sourceTree = "<group>"; };
 		5AA52DDF1E1F18AD008AC2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AA52DEB1E1F256C008AC2B1 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		5AA52DED1E1F2615008AC2B1 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		5AA52DBC1E1F18AD008AC2B1 /* retro-calc */ = {
 			isa = PBXGroup;
 			children = (
+				5AA52DEB1E1F256C008AC2B1 /* Minecraft.ttf */,
+				5AA52DED1E1F2615008AC2B1 /* btn.wav */,
 				5AA52DBD1E1F18AD008AC2B1 /* AppDelegate.swift */,
 				5AA52DBF1E1F18AD008AC2B1 /* ViewController.swift */,
-				5AA52DEB1E1F256C008AC2B1 /* Minecraft.ttf */,
 				5AA52DC11E1F18AD008AC2B1 /* Main.storyboard */,
 				5AA52DC41E1F18AD008AC2B1 /* Assets.xcassets */,
 				5AA52DC61E1F18AD008AC2B1 /* LaunchScreen.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA52DEE1E1F2615008AC2B1 /* btn.wav in Resources */,
 				5AA52DC81E1F18AD008AC2B1 /* LaunchScreen.storyboard in Resources */,
 				5AA52DC51E1F18AD008AC2B1 /* Assets.xcassets in Resources */,
 				5AA52DEC1E1F256C008AC2B1 /* Minecraft.ttf in Resources */,
