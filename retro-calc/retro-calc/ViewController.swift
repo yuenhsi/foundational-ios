@@ -9,13 +9,23 @@
 import UIKit
 import AVFoundation
 
+enum Operator {
+    case multiply, divide, add, subtract, equal, noOp
+}
+
 class ViewController: UIViewController {
     
+    @IBOutlet weak var counter: UILabel!
     var btnSound: AVAudioPlayer!
+    var leftOperand = ""
+    var rightOperand = ""
+    var currentOperand: Operator!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        counter.text = ""
+        currentOperand = Operator.noOp
         let path = Bundle.main.path(forResource: "btn", ofType: "wav")
         let soundURL = URL(fileURLWithPath: path!)
         
@@ -29,6 +39,70 @@ class ViewController: UIViewController {
 
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
+        if (currentOperand == Operator.noOp) {
+            leftOperand += String(sender.tag)
+            counter.text = leftOperand
+        } else {
+            rightOperand += String(sender.tag)
+            counter.text = rightOperand
+        }
+    }
+    
+    @IBAction func divide(sender: UIButton) {
+        playSound()
+        if currentOperand != Operator.divide {
+            getResult()
+        }
+        currentOperand = Operator.divide
+    }
+    
+    @IBAction func multiply(sender: UIButton) {
+        playSound()
+        if currentOperand != Operator.multiply {
+            getResult()
+        }
+        currentOperand = Operator.multiply
+    }
+    
+    @IBAction func subtract(sender: UIButton) {
+        playSound()
+        if currentOperand != Operator.subtract {
+            getResult()
+        }
+        currentOperand = Operator.subtract
+    }
+    
+    @IBAction func add(sender: UIButton) {
+        playSound()
+        if currentOperand != Operator.add {
+            getResult()
+        }
+        currentOperand = Operator.add
+    }
+    
+    @IBAction func equal(sender: UIButton) {
+        playSound()
+        getResult()
+    }
+    
+    func getResult() {
+        if leftOperand != "" && rightOperand != "" {
+            switch currentOperand! {
+            case .multiply:
+                counter.text = "\(Int(leftOperand)! * Int(rightOperand)!)"
+            case .divide:
+                counter.text = "\(Int(leftOperand)! / Int(rightOperand)!)"
+            case .add:
+                counter.text = "\(Int(leftOperand)! + Int(rightOperand)!)"
+            case .subtract:
+                counter.text = "\(Int(leftOperand)! - Int(rightOperand)!)"
+            default:
+                break
+            }
+            leftOperand = counter.text!
+            rightOperand = ""
+            currentOperand = Operator.noOp
+        }
     }
     
     func playSound() {
@@ -37,12 +111,5 @@ class ViewController: UIViewController {
         }
         btnSound.play()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
