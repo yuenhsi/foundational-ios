@@ -16,6 +16,8 @@
 		5ADC81901E201C4B00B71DE6 /* party_rockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC818F1E201C4B00B71DE6 /* party_rockUITests.swift */; };
 		5ADC81A51E20206E00B71DE6 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC81A41E20206E00B71DE6 /* still time.ttf */; };
 		5ADC81A71E20212400B71DE6 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC81A61E20212400B71DE6 /* VideoVC.swift */; };
+		5ADC81AE1E20295A00B71DE6 /* PartyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC81AD1E20295A00B71DE6 /* PartyViewCell.swift */; };
+		5ADC81B01E202ADA00B71DE6 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC81AF1E202ADA00B71DE6 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5ADC81911E201C4B00B71DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ADC81A41E20206E00B71DE6 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		5ADC81A61E20212400B71DE6 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		5ADC81AD1E20295A00B71DE6 /* PartyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewCell.swift; sourceTree = "<group>"; };
+		5ADC81AF1E202ADA00B71DE6 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +105,13 @@
 		5ADC816E1E201C4B00B71DE6 /* party-rock */ = {
 			isa = PBXGroup;
 			children = (
-				5ADC816F1E201C4B00B71DE6 /* AppDelegate.swift */,
-				5ADC81711E201C4B00B71DE6 /* MainVC.swift */,
-				5ADC81A61E20212400B71DE6 /* VideoVC.swift */,
+				5ADC81AA1E20287900B71DE6 /* Controller */,
+				5ADC81A91E20287200B71DE6 /* View */,
+				5ADC81A81E20286700B71DE6 /* Model */,
 				5ADC81731E201C4B00B71DE6 /* Main.storyboard */,
-				5ADC81761E201C4B00B71DE6 /* Assets.xcassets */,
 				5ADC81781E201C4B00B71DE6 /* LaunchScreen.storyboard */,
+				5ADC816F1E201C4B00B71DE6 /* AppDelegate.swift */,
+				5ADC81761E201C4B00B71DE6 /* Assets.xcassets */,
 				5ADC81A41E20206E00B71DE6 /* still time.ttf */,
 				5ADC817B1E201C4B00B71DE6 /* Info.plist */,
 			);
@@ -129,6 +134,31 @@
 				5ADC81911E201C4B00B71DE6 /* Info.plist */,
 			);
 			path = "party-rockUITests";
+			sourceTree = "<group>";
+		};
+		5ADC81A81E20286700B71DE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC81AD1E20295A00B71DE6 /* PartyViewCell.swift */,
+				5ADC81AF1E202ADA00B71DE6 /* PartyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5ADC81A91E20287200B71DE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5ADC81AA1E20287900B71DE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC81711E201C4B00B71DE6 /* MainVC.swift */,
+				5ADC81A61E20212400B71DE6 /* VideoVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ADC81A71E20212400B71DE6 /* VideoVC.swift in Sources */,
+				5ADC81AE1E20295A00B71DE6 /* PartyViewCell.swift in Sources */,
+				5ADC81B01E202ADA00B71DE6 /* PartyRock.swift in Sources */,
 				5ADC81721E201C4B00B71DE6 /* MainVC.swift in Sources */,
 				5ADC81701E201C4B00B71DE6 /* AppDelegate.swift in Sources */,
 			);

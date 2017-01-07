@@ -9,10 +9,25 @@
 import UIKit
 
 class VideoVC: UIViewController {
+    
+    private var _partyRock: PartyRock!
+    
+    var partyRock: PartyRock {
+        get {
+            return _partyRock
+        } set {
+            _partyRock = newValue
+        }
+    }
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        titleLabel.text = partyRock.songTitle
+        webView.loadHTMLString(partyRock.songVideoURL, baseURL: nil)
         // Do any additional setup after loading the view.
     }
 
