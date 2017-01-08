@@ -7,3 +7,5 @@ let LATITUTE = "lat="
 let LONGTITUDE = "&lon="
 
 let URL_STRING = "\(URL_PREFIX)\(LATITUTE)35\(LONGTITUDE)139\(API_KEY)"
+
+typealias DownloadComplete = () -> ()

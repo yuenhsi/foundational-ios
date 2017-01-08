@@ -86,13 +86,13 @@
 			children = (
 				5AFA95421E21F3D700FCDE36 /* AppDelegate.swift */,
 				5AFA95441E21F3D700FCDE36 /* WeatherVC.swift */,
+				5A81088B1E221979008AD958 /* CurrentWeather.swift */,
 				5AFA95461E21F3D700FCDE36 /* Main.storyboard */,
 				5A8108891E2218B2008AD958 /* Constants.swift */,
 				5AFA954C1E21F3D700FCDE36 /* Assets.xcassets */,
 				5AFA954E1E21F3D700FCDE36 /* LaunchScreen.storyboard */,
 				5AFA95511E21F3D700FCDE36 /* Info.plist */,
 				5AFA95491E21F3D700FCDE36 /* weather_cast.xcdatamodeld */,
-				5A81088B1E221979008AD958 /* CurrentWeather.swift */,
 			);
 			path = "weather-cast";
 			sourceTree = "<group>";
