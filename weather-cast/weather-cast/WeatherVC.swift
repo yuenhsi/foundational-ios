@@ -34,12 +34,6 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate, C
         weatherTableView.delegate = self
         
         getLocation()
-        currentWeather = CurrentWeather()
-        currentWeather.downloadWeatherDetails {
-            self.getForecastData {
-                self.updateUI()
-            }
-        }
     }
     
     func getLocation() {
@@ -48,8 +42,15 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate, C
             Location.sharedInstance.longitude = currentLocation?.coordinate.longitude
             Location.sharedInstance.latitude = currentLocation?.coordinate.latitude
         } else {
-            locationManager.requestWhenInUseAuthorization()
-            getLocation()
+            Location.sharedInstance.longitude = 100
+            Location.sharedInstance.latitude = 100
+        }
+        
+        currentWeather = CurrentWeather()
+        currentWeather.downloadWeatherDetails {
+            self.getForecastData {
+                self.updateUI()
+            }
         }
     }
     
