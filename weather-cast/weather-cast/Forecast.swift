@@ -64,7 +64,8 @@ class Forecast {
     }
     
     func kelvinToCelcius(kelvin: Double) -> Double {
-        return kelvin - 273
+        let celcius = kelvin - 273
+        return Double(round(celcius * 10) / 10)
     }
     
 }
