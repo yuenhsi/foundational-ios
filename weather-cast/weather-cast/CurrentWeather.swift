@@ -72,7 +72,7 @@ class CurrentWeather {
     }
     
     func kelvinToCelcius(kelvin: Double) -> Double {
-        return kelvin - 273.15
+        return kelvin - 273
     }
     
 }
