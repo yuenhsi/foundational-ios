@@ -58,6 +58,7 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         locationLabel.text = currentWeather.cityName
         weatherLabel.text = currentWeather.weather
         weatherImage.image = UIImage(named: currentWeather.weather)
+        weatherTableView.reloadData()
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -65,12 +66,16 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
-        return cell
+        if let weatherCell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
+            weatherCell.updateUI(forecast: forecasts[indexPath.row])
+            return weatherCell
+        } else {
+            return WeatherCell()
+        }
     }
     
 }
