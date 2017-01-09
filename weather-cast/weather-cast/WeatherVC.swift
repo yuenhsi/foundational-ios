@@ -8,8 +8,9 @@
 
 import UIKit
 import Alamofire
+import CoreLocation
 
-class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
@@ -20,18 +21,35 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var currentWeather: CurrentWeather!
     var forecasts = [Forecast]()
+    
+    let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
         weatherTableView.dataSource = self
         weatherTableView.delegate = self
         
+        getLocation()
         currentWeather = CurrentWeather()
         currentWeather.downloadWeatherDetails {
             self.getForecastData {
                 self.updateUI()
             }
+        }
+    }
+    
+    func getLocation() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            let currentLocation = locationManager.location
+            Location.sharedInstance.longitude = currentLocation?.coordinate.longitude
+            Location.sharedInstance.latitude = currentLocation?.coordinate.latitude
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+            getLocation()
         }
     }
     
