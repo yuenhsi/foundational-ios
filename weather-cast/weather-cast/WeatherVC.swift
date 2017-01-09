@@ -33,25 +33,29 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate, C
         weatherTableView.dataSource = self
         weatherTableView.delegate = self
         
-        getLocation()
     }
     
-    func getLocation() {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            let currentLocation = locationManager.location
-            Location.sharedInstance.longitude = currentLocation?.coordinate.longitude
-            Location.sharedInstance.latitude = currentLocation?.coordinate.latitude
-        } else {
-            Location.sharedInstance.longitude = 100
-            Location.sharedInstance.latitude = 100
-        }
-        
+    func getWeather() {
         currentWeather = CurrentWeather()
         currentWeather.downloadWeatherDetails {
             self.getForecastData {
                 self.updateUI()
             }
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            let currentLocation = locationManager.location
+            Location.sharedInstance.longitude = currentLocation?.coordinate.longitude
+            Location.sharedInstance.latitude = currentLocation?.coordinate.latitude
+            getWeather()
+        } else {
+            Location.sharedInstance.longitude = 100
+            Location.sharedInstance.latitude = 100
+            getWeather()
+        }
+
     }
     
     func getForecastData(completed: @escaping DownloadComplete) {

@@ -60,7 +60,6 @@ class Forecast {
         if let dt = jsonData["dt"] as? Double {
             _dayOfWeek = Date(timeIntervalSince1970: dt).dayOfTheWeek()
         }
-        print("highlows: \(_high), \(_low); weather: \(_weather); dayofweek: \(_dayOfWeek)")
     }
     
     func kelvinToCelcius(kelvin: Double) -> Double {
